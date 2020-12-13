@@ -1,0 +1,99 @@
+#StandartPage {
+    background-color: #FFD65B;
+}
+
+#standartRoom {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100%;
+    background-color: #FFD65B;
+}
+
+.roomsMainText {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-left: 80px;
+    width: 35%;
+    height: 30%;
+}
+
+#headStandartRoomsMainText {
+    font-family: 'Oswald', sans-serif;
+    font-size: 55px;
+    color: #1F2C30;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+#aticleForStandartRoomsMainText {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #1F2C30;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.positionRoomSecondText {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 600px;
+    margin-top: -230px;
+}
+
+#headStandartRoomsSecondText {
+    font-family: 'Oswald', sans-serif;
+    font-size: 35px;
+    color: #1F2C30;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.rectangle_standartRoom {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-rows: repeat(1, 100px);
+    position: relative;
+    left: 6.5%;
+    top: 15%;
+    width: 300px;
+    height: 10px;
+    background: #1F2C30;
+}
+
+ul {
+    font-family: 'Montserrat_1', sans-serif;
+    font-size: 18px;
+    color: #1F2C30;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.blockForimageOfRoom {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.imageOfRooms {
+    width: 361px;
+    height: 234px;
+}
+
+@media only screen and (min-width:320px) and (max-width: 1124px) {
+    #standartRoom {
+        flex-direction: column;
+        align-items: center;
+    }
+    .positionRoomSecondText {
+        margin-top: 20px;
+        margin-left: 40px;
+    }
+    .blockForimageOfRoom {
+        flex-direction: column;
+        align-content: space-around;
+        align-items: center;
+    }
+}

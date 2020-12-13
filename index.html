@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+
+<head>
+    <title>Отель </title>
+    <meta charset="UTF-8">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+        @font-face {
+            font-family: "Montserrat_1";
+            src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+        }
+    </style>
+    <link rel="stylesheet" href="меню_css.css " type="text/css" />
+    <link rel="stylesheet" href="rooms.css" type="text/css" />
+    <link rel="stylesheet" href="servesesPage.css" type="text/css" />
+    <link rel="stylesheet" href="reviews.css" type="text/css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+    <script type="text/javascript">
+        $(function() {
+
+            $(window).scroll(function() {
+
+                if ($(this).scrollTop() != 0) {
+
+                    $('#toTop').fadeIn();
+
+                } else {
+
+                    $('#toTop').fadeOut();
+
+                }
+
+            });
+
+            $('#toTop').click(function() {
+
+                $('body,html').animate({
+                    scrollTop: 0
+                }, 800);
+
+            });
+
+        });
+    </script>
+</head>
+
+<body>
+    <div id="backgroundMainPage">
+        <ul class="menu-main">
+            <li><a href="" class="current">Главная страница</a></li>
+            <li><a href="#rooms">Номера</a></li>
+            <li><a href="#serveses">Услуги</a></li>
+            <li><a href="#reviews">Отзывы</a></li>
+            <li><a href="#contacts">Контакты</a></li>
+            <li><a href="aboutAuthor.html">Об Авторе</a></li>
+        </ul>
+
+        <div class="textForMainPage">
+            <h1 id="mainTextForMainPageHead"> отель «Art Hotel»</h1>
+            <div class="rectangle_mainPage"></div>
+            <h2 id="secondTextForMainPage">отдых как произведение искусства</h2>
+        </div>
+    </div>
+
+    <div id="rooms">
+        <div id="roomsMainText">
+            <h1 id="headRoomsMainText">Номера</h1>
+            <div class="rectangle_rooms"></div>
+            <h5 id="aticleForRoomsMainText"> Более 5 видов номеров различного уровня комфорта, подходящие для каждого отдыхающего нашего отеля. Лучшие дизайнеры сотрудничали с нами, чтобы ваш отдых был как произведение искусства</h5>
+        </div>
+        <div id="roomsBlock">
+            <div class="blockForDescribeRoom">
+                <a href="standart.html"><img class="imageForRooms" src="стандарт.jpg"></a>
+                <h1 class="headNameRoom">стандарт</h1>
+                <h5 class="textForNameRoom">Отель "Art Hotel" предоставляет гостям прекрасные, красочные и уютные номера категории стандарт, оснащенные всем необходимым для отдыха широкого круга людей.
+                </h5>
+            </div>
+            <div class="blockForDescribeRoom">
+                <a href="lux.html"> <img class="imageForRooms" src="люкс.jpg"></a>
+                <h1 class="headNameRoom">люкс</h1>
+                <h5 class="textForNameRoom">Двухкомнатный номер общей площадью 41,5 кв.м. состоит из уютной гостиной и просторной спальни с одной большой кроватью (180x200). Идеально подходят для тех, кто ценит сочетание комфорта и функциональности.
+                </h5>
+            </div>
+            <div class="blockForDescribeRoom">
+                <a href="studio.html"> <img class="imageForRooms" src="студия.jpg"></a>
+                <h1 class="headNameRoom">студия</h1>
+                <h5 class="textForNameRoom">Квартиры-студии, где в пределах помещения расположены одновременно и зона спальни и зона кухни.</h5>
+            </div>
+        </div>
+    </div>
+    <div id="serveses">
+
+        <div id="headServesesPage">
+            <h1 id="servesesHeadTextFirstWord">бесплатные </h1>
+            <h1 id="servesesHeadTextSecondWord"> услуги </h1>
+        </div>
+        <div class="rectangle_serveses"></div>
+        <div id="servesesBlock">
+            <div id="blockForGym">
+                <img class="fixedPictureForTheServeses" src="гантеля.png">
+                <h1 id="blockForGymHeadText">ТРЕНАЖЕРНЫЙ ЗАЛ</h1>
+                <h5 id="blockForGymText">Поддерживайте себя в форме на отдыхе и в командировке с нашей помощью</h5>
+            </div>
+            <div id="blockForArt">
+                <img class="fixedPictureForTheServeses" src="картина.png">
+                <h1 id="blockForPictureHeadText">ВЫСТАВОЧНЫЙ ЗАЛ</h1>
+                <h5 id="blockForPictureText">в нашем отеле постоянные действующие выставки современных художников</h5>
+            </div>
+            <div id="blockForBike">
+                <img class="fixedPictureForTheServeses" src="велосипед.png">
+                <h1 id="blockForBikeHeadText">прокат велосипедов</h1>
+                <h5 id="blockForBikeText">Воспользуйтесь, чтобы не спеша посмотреть достопримечательности столицы.</h5>
+            </div>
+        </div>
+        <div class="basementYellow_serveses"></div>
+    </div>
+
+    </div>
+    <div id="reviews">
+        <div id="headReviewsPage">
+            <h1 id="reviewsHeadText">Отзывы </h1>
+        </div>
+        <div class="rectangle_1"></div>
+        <div id="reviewsBlock">
+            <div id="firstReview">
+                <img class=" fixedPictureForTheReview" src="патинсон.png">
+                <h1 id="nameForTheFirstReview">роберт паттинсон, актёр</h1>
+                <h5 id="textOfTheFirstReview">Спортзал 10 из 10, мне очень понравилось.</h5>
+            </div>
+            <div id="secondReview">
+                <img class=" fixedPictureForTheReview" src="аффлек.png">
+                <h1 id="nameForTheSecondReview">Бен аффлек, актёр</h1>
+                <h5 id="textOfTheSecondReview">Тут нечего добавить, остаётся только кинуть загадочный взгляд в мексиканской шляпе.</h5>
+            </div>
+            <div id="thirdReview">
+                <img class=" fixedPictureForTheReview" src="гранкин.png">
+                <h1 id="nameForTheThirdReview">артём загранкин, разработчик, миллиордер</h1>
+                <h5 id="textOfTheThirdReview">Рекомендую! отдыхали всей семьёй! Сервис отличный, бассейн с хлорочкой, всё как я люблю.</h5>
+            </div>
+        </div>
+        <div class="basementYellow"></div>
+    </div>
+    <div id="contacts">
+
+        <div id="headContactsPage">
+            <h1 id="contactsHeadText">Контакты </h1>
+            <div class="rectangle"></div>
+        </div>
+        <div id="mainBlockForContactsPage">
+            <div id="contactsPost">
+                <h1 id="textForContactsPost">Почтовый адрес </h1>
+                <h2 id="textForContactsPost2">Ул. Первомайская, д. 123, г. Рязань, Россия 849384</h2>
+            </div>
+            <div id="mainTextContactsMail">
+                <h1 id="textForContactsMail">Электронный адрес </h1>
+                <h2 id="textForContactsMail2">privyet@super-website.ru</h2>
+            </div>
+            <div id="mainTextContactsPhoneNumber">
+                <h1 id="textForContactsPhoneNumber">Телефонный номер</h1>
+                <h2 id="textForContactsPhoneNumber2">+7 (123) 456-78-90</h2>
+            </div>
+        </div>
+    </div>
+    <DIV ID="toTop"> ^ Наверх </DIV>
+</body>
+
+</html>

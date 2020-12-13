@@ -1,0 +1,135 @@
+#headReviewsPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#reviewsHeadText {
+    font-family: 'Oswald', sans-serif;
+    font-size: 55px;
+    color: #1F2C30;
+    text-transform: uppercase;
+}
+
+#reviews {
+    width: 100%;
+    min-height: 100%;
+    background-color: #ffffff;
+}
+
+#reviewsBlock {
+    display: flex;
+    justify-content: space-around;
+}
+
+#firstReview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10%;
+    width: 20%;
+    height: 25%;
+}
+
+.fixedPictureForTheReview {
+    width: 10rem;
+    height: 10rem;
+}
+
+@font-face {
+    font-family: "Montserrat_1";
+    src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+}
+
+
+/*@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');*/
+
+#nameForTheFirstReview {
+    font-family: 'Montserrat_1', sans-serif;
+    font-size: 18px;
+    color: #1F2C30;
+    position: relative;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    left: 0%;
+    top: 30%;
+}
+
+#textOfTheFirstReview {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #1F2C30;
+    position: relative;
+    text-align: center;
+    top: 30%;
+}
+
+#secondReview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10%;
+    width: 20%;
+    height: 25%;
+}
+
+#nameForTheSecondReview {
+    font-family: 'Montserrat_1', sans-serif;
+    font-size: 18px;
+    color: #1F2C30;
+    position: relative;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    left: 0%;
+    top: 30%;
+}
+
+#textOfTheSecondReview {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #1F2C30;
+    position: relative;
+    text-align: center;
+    left: 0%;
+    top: 30%;
+}
+
+#thirdReview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10%;
+    width: 20%;
+    height: 25%;
+}
+
+#nameForTheThirdReview {
+    font-family: 'Montserrat_1', sans-serif;
+    font-size: 15px;
+    color: #1F2C30;
+    position: relative;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    left: 0%;
+    top: 30%;
+}
+
+#textOfTheThirdReview {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #1F2C30;
+    position: relative;
+    text-align: center;
+    left: 0%;
+    top: 25%;
+}
+
+@media only screen and (min-width:320px) and (max-width: 1124px) {
+    #reviewsBlock {
+        flex-direction: column;
+        align-items: center;
+    }
+}
