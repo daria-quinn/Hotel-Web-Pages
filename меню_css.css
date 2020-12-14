@@ -325,10 +325,11 @@ body {
         padding: 25px 0 20px;
         margin: 0 30px;
     }
-    #textForMainPage {
+    .textForMainPage {
         flex-direction: column;
         align-items: center;
-        margin-top: 1200px;
+        position: relative;
+        top: 20rem;
     }
     #contacts {
         flex-direction: column;
